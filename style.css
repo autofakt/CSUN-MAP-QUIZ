@@ -1,0 +1,73 @@
+/* Set the size of the div element that contains the map */
+#map {
+  height: 850px;
+  /* The height is 400 pixels */
+  width: 45%;
+  /* The width is the width of the web page */
+  float: left;
+}
+
+body {
+  background-color: tan;
+}
+
+#quiz {
+  height: 850px;
+  width: 45%;
+  float: left;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.questions {
+  text-align: center;
+  background-color: yellow;
+}
+
+.correctAnswers {
+  text-align: center;
+  background-color: lightgreen;
+}
+
+.wrongAnswers {
+  text-align: center;
+  background-color: red;
+}
+
+.resultTab {
+  text-align: center;
+  background-color: lightblue;
+  height: 60px;
+  font-weight: bold;
+  font-size: x-large;
+  padding: 35px;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.shakes {
+/* Start the shake animation and make the animation last for 0.5 seconds */
+animation: shake 0.5s;
+
+/* When the animation is finished, start again */
+
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
